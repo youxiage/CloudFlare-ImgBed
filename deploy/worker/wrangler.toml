@@ -27,18 +27,17 @@ not_found_handling = "single-page-application"
 binding = "IMAGES"
 
 [vars]
-# TG_BOT_TOKEN = ""
-# TG_CHAT_ID = ""
+R2PublicUrl = "https://img.992698.xyz/file"
 
-# [[d1_databases]]
-# binding = "img_d1"
-# database_name = "img_d1"
-# database_id = ""
+[[d1_databases]]
+binding = "img_d1"
+database_name = "cloudflare-imgbed"
+database_id = "d0fe4cb7-5e25-41d0-966d-47174fd27f5b"
 
-# [[r2_buckets]]
-# binding = "img_r2"
-# bucket_name = ""
+[[r2_buckets]]
+binding = "img_r2"
+bucket_name = "cloudflare-imgbed"
 
-# [[kv_namespaces]]
-# binding = "img_url"
-# id = ""
+[[routes]]
+pattern = "img.992698.xyz"
+custom_domain = true
